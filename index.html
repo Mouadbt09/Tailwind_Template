@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="absolute h-screen w-full bg-no-repeat z-0 bg-cover bg-center" style="background-image: url(./img/hero-bg.webp);"></section>
+    <nav class="fixed w-full hidden sm:inline-block bg-white z-30">
+        <div class=" container flex justify-between items-center h-12 w-full m-auto">
+            <a href="./index.html" class="text-gray-600">Home</a>
+            <!-- <div class="ml-auto h-full"> -->
+                <a href="./index.html" class="text-gray-600 bg-yellow-300 p-5 h-full ml-auto flex  items-center">Home</a>
+                <a href="" class="text-gray-600 p-5">About</a>
+                <a href="" class="text-gray-500 p-5">Shop</a>
+                <a href="" class="text-gray-500 p-5">Reviews</a>
+                <a href="" class="text-gray-500 p-5">Contact</a>
+            <!-- </div> -->
+        </div>
+        
+    </nav>
+
+    
+    <nav class="sm:hidden w-full fixed flex p-2 h-12 justify-between bg-white z-50 text-orange-600 text-xl">
+        <a href="./index.html" class="text-gray-600">Home</a>
+        <p class="hamburger z-50 cursor-pointer select-none" onclick="document.querySelector('ul').classList.toggle('invisible')">☰</p>
+    </nav>
+    <ul class="shadow-lg fixed w-3/4 grid content-center gap-6 top-0 right-0   h-screen bg-white invisible z-40 transition duration-75 ease-out">
+        <li class="text-2xl"><a href="" class="text-gray-600 p-5">About</a> </li>
+        <li class="text-2xl"><a href="" class="text-gray-500 p-5">Shop</a> </li>
+        <li class="text-2xl"><a href="" class="text-gray-500 p-5">Reviews</a></li>
+        <li class="text-2xl"><a href="" class="text-gray-500 p-5">Contact</a></li>
+    </ul>
+   
+      
+    
+    <section class=" absolute z-10 h-screen w-full content-center grid grid-col-1 justify-center gap-20 " >
+        <p class="mt-10 sm:mt-0 text-center text-green-600 text-xl">Welcome to M-store</p>
+        <h1 class="text-5xl sm:text-6xl text-center  text-white font-bold">Decorate a beautiful interior <br> for your space </h1>
+        <div class="bg-white rounded p-2 sm:p-5 grid sm:grid-cols-7 gap-20 py-10 text-center">
+            <input type="text" placeholder="Product"class="border  rounded p-4 col-span-3">
+            <select name="" id="" placeholder="Price"class="border rounded p-4 bg-white col-span-3">
+                <option value="">300$</option>
+                <option value="">500$</option>
+                <option value="">700$</option>
+            </select>
+            <input type="button" value="Search" class="cursor-pointer rounded bg-orange-600 text-white p-4 px-7 col-span-1">
+        </div>
+    </section>
+
+    <section class="h-screen container  m-auto grid-cols-2 relaive "></section>
+    <section class="lg:h-screen p-2 sm:p-8 lg:p-0 h-auto container m-auto lg:grid content-center  grid-cols-2 align-center">
+        <div class="sm:p-6 grid gap-5">
+            <p class="text-green-600 text-xl">Our Story</p>
+            <h2 class="text-3xl sm:text-5xl font-bold flex"><p class="text-gray-600">Introducing</p>&nbsp; <p>M-store</p></h2>
+            <h3 class="text-xl sm:text-3xl font-semibold text-gray-600">Since 1986, We crafted interior products for better spaces</h3>
+            <p class=" text-gray-500">
+                &nbsp; Over the years, we have built a reputation for excellence in the industry, 
+                thanks to our talented team of designers and craftsmen who work tirelessly to create products that exceed our clients
+                expectations. <br> <br>
+                At M-store, we believe that everyone deserves a beautiful home that reflects their personality and style. 
+                That’s why we offer a wide range of interior products that cater to different tastes and preferences.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2  content-center">
+            <div class="flex items-center">
+                <img src="./img/parents.jpg" alt="" class="w-60 h-60 m-auto sm:m-0 rounded-full">
+            </div>
+            <div>
+                <img src="./img/sofa.webp" alt=""  class="w-70 h-70 rounded-full m-auto sm:m-0">
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <section class="h-screen relative">
+        <section class="absolute h-screen w-full bg-no-repeat z-0 bg-cover bg-center top-0" style="background-image: url(./img/colors\ ofa.jpg);"></section>
+        <section class="container m-auto p-2 sm:p-0 h-screen grid content-center sm:justify-start">
+            <div class="rounded-xl w-full m-auto sm:m-0 sm:w-96 z-10  border-t-8 border-orange-600 bg-white p-4">
+                <h2 class="font-bold text-2xl pb-4">Opening time</h2>
+                <span class="flex my-2">
+                    <p class="text-gray-500">Mon - Friday ~</p><p class="text-gray-700">8:00 AM&nbsp;6:00 PM</p>
+                </span>
+                <span class="flex my-2">
+                    <p class="text-gray-500">Saturday ~</p><p class="text-gray-700">10:00 AM&nbsp;10:00 PM</p>
+                </span>
+                <span class="flex my-2">
+                    <p class="text-gray-500">Sunday </p>&nbsp;<p class="text-gray-700">Closed</p>
+                </span>
+            </div>
+        </section>
+    </section>
+
+    <section class="container m-auto">
+        <div class="p-6 sm:grid gap-5">
+            <p class="text-green-600 sm:text-xl">MStore Design Shop</p>
+            <h2 class="text-3xl sm:text-5xl font-bold flex"><p class="text-orange-600">Introducing</p>&nbsp; <p>M-store</p></h2>
+            <div class="w-full py-10 ">
+                <div class="md:grid grid-cols-2 gap-5">
+
+                    <div class="relative sm:p-4 mt-5">
+                        <div class="top-8 right-8 rounded-xl absolute h-24 w-16 bg-white top grid content-around justify-center">
+                            <img class="w-6 mx-auto" src="./img/icons8-aimer-32.png" alt="">
+                            <img class="w-6 mx-auto"  src="./img/icons8-bookmark-32.png" alt="">
+                        </div>
+                        <img class="rounded-3xl w-full h-auto" src="./img/bothroom.jpg" alt="">
+                        <p class="text-2xl sm:text-4xl font-bold text-gray-900 pl-5">Bathroom</p>
+                    </div>
+
+                    <div class="relative sm:p-4 mt-5">
+                        <div class="top-8 right-8 rounded-xl absolute h-24 w-16 bg-white top grid content-around justify-center">
+                            <img class="w-6 mx-auto" src="./img/icons8-aimer-32.png" alt="">
+                            <img class="w-6 mx-auto"  src="./img/icons8-bookmark-32.png" alt="">
+                        </div>
+                        <img class="rounded-3xl w-full h-auto" src="./img/dinning.webp" alt="">
+                        <p class="text-2xl sm:text-4xl font-bold text-gray-900 pl-5">Dining</p>
+                    </div>
+                </div>
+                <div class="col-span-2 grid md:grid-cols-3">
+                    <div class="relative smp-4 mt-5">
+                        <div class="top-8 right-8 rounded-xl absolute h-24 w-16 bg-white top grid content-around justify-center">
+                            <img class="w-6 mx-auto" src="./img/icons8-aimer-32.png" alt="">
+                            <img class="w-6 mx-auto"  src="./img/icons8-bookmark-32.png" alt="">
+                        </div>
+                        <img class="rounded-3xl w-full h-auto" src="./img/cyen sofa.jpg" alt="">
+                        <p class="sm:text-4xl text-2xl font-bold text-gray-900 pl-5">Living Room</p>
+                    </div>
+                    <div class="relative sm:p-4 mt-5">
+                        <div class="top-8 right-8 rounded-xl absolute h-24 w-16 bg-white top grid content-around justify-center">
+                            <img class="w-6 mx-auto" src="./img/icons8-aimer-32.png" alt="">
+                            <img class="w-6 mx-auto"  src="./img/icons8-bookmark-32.png" alt="">
+                        </div>
+                        <img class="rounded-3xl w-full h-auto" src="./img/women.jpg" alt="">
+                        <p class="text-2xl sm:text-4xl font-bold text-gray-900 pl-5">Chef Kitchen</p>
+                    </div>
+                    <div class="relative sm:p-4 mt-5">
+                        <div class="top-8 right-8 rounded-xl absolute h-24 w-16 bg-white top grid content-around justify-center">
+                            <img class="w-6 mx-auto" src="./img/icons8-aimer-32.png" alt="">
+                            <img class="w-6 mx-auto"  src="./img/icons8-bookmark-32.png" alt="">
+                        </div>
+                        <img class="rounded-3xl w-full h-auto" src="./img/child bed (1).jpg" alt="">
+                        <p class="text-2xl sm:text-4xl font-bold text-gray-900 pl-5">Childrens Bedroom</p>
+                    </div>
+                </div>        
+                 <div class="flex justify-around items-center sm:w-1/3 mx-auto  mt-14">
+                    <div class="text-gray-500 cursor-pointer font-bold w-12 h-12  grid justify-center items-center"><p>«</p></div>
+                    <div class="cursor-pointer font-bold rounded-full w-12 h-12 border grid justify-center items-center bg-orange-600 text-white border-white">1</div>
+                    <div class="text-gray-500 cursor-pointer font-bold rounded-full w-12 h-12 border grid justify-center items-center">2</div>
+                    <div class="text-gray-500 cursor-pointer font-bold rounded-full w-12 h-12 border grid justify-center items-center">3</div>
+                    <div class="text-gray-500 cursor-pointer font-bold rounded-full w-12 h-12 border grid justify-center items-center">4</div>
+                    <div class="text-gray-500 cursor-pointer font-bold rounded-full w-12 h-12 border grid justify-center items-center">5</div>
+                    <div class="text-gray-500 cursor-pointer font-bold rounded-full w-12 h-12 border grid justify-center items-center">6</div>
+                    <div class="text-gray-500 cursor-pointer font-bold w-12 h-12  grid justify-center items-center"><p>»</p></div>
+                 </div>       
+            </div>
+        </div>
+    </section>
+
+    <section class="md:h-screen relative h-auto">
+        <section class="absolute h-screen w-full bg-no-repeat z-0 bg-cover bg-bottom top-0" style="background-image: url(./img/bg-s.png);"></section>
+        <section class="container m-auto md:h-screen h-auto content-start gap-x-10 gap-y-16 grid grid-cols-3 pt-11 box-border">
+            
+            <div class=" flex justify-between z-10 items-center p-2 col-span-3">
+                <span>
+                    <p class="text-green-600 sm:text-lg">Happy customers.</p>
+                    <h2 class="text-3xl sm:text-5xl font-bold flex">Reviews</h2>
+                </span>
+                <span class="flex gap-2">
+                    <i class="cursor-pointer flex justify-center items-center  w-16 h-16 rounded-full font-bold bg-white text-4xl text-orange-600 ">←</i>
+                    <i class="cursor-pointer flex justify-center items-center  w-16 h-16 rounded-full font-bold bg-white text-4xl text-orange-600 ">→</i>
+                </span>
+            </div> 
+
+            <div class="col-span-3 grid md:grid-cols-3 gap-x-10 sm:justify-center px-10 sm:px-0 ">
+                <div class="flex items-center mt-5 sm:mt-0">
+                    <div class="relative w-full rounded-xl bg-white h-72">
+                        <p class="text-3xl font-bold p-10">Thank you for visiting This page. </p>
+                        <div class="rounded-b-xl py-2 px-5 absolute bottom-0 bg-gradient-to-b from-orange-600 to-orange-300 h-15 w-full text-white grid grid-cols-[50px,1fr,1fr] content-center">
+                           <img src="./img/Womenblue.jpg" class="w-full rounded-full" alt="">
+                           <p class="flex items-center grid-cols-2 pl-2 gap-1">
+                                <strong class="col-span-1">Susan</strong>&nbsp; 
+                                <span class="col-span-1">Buss</span>  
+                            </p>
+                           <p class="text-xl flex items-center justify-end col-span-1  lg:col-span-1 sm:col-span-3">
+                            
+                                <span class="text-yellow-400 ">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class=" flex items-center mt-5 sm:mt-0">
+                    <div class="relative w-full rounded-xl bg-white h-72">
+                        <p class="text-3xl font-bold p-10">M-store is the most suitable website layout.  </p>
+                        <div class="rounded-b-xl py-2 px-5 absolute bottom-0 bg-gradient-to-b from-orange-600 to-orange-300 h-15 w-full text-white grid grid-cols-[50px,1fr,1fr] content-center">
+                           <img src="./img/Womenwhite.jpg" class="w-full rounded-full" alt="">
+                           <p class="flex items-center grid-cols-2 pl-2 gap-1"><strong class="col-span-1">Susan</strong>&nbsp; <span class="col-span-1">Buss</span>  </p>
+                           <p class="text-xl flex items-center justify-end"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative w-full  rounded-xl bg-white h-72 mt-5 sm:mt-0">
+                    <p class="text-3xl font-bold p-10">Explore more HTML Work From Mouad. </p>
+                    <div class="rounded-b-xl py-2 px-5 absolute bottom-0 bg-gradient-to-b from-orange-600 to-orange-300 h-15 w-full text-white grid grid-cols-[50px,1fr,1fr] content-center">
+                        <img src="./img/Men.jpg" class="w-full rounded-full" alt="">
+                        <p class="flex items-center grid-cols-2 pl-2 gap-1"><strong class="col-span-1">Susan</strong>&nbsp; <span class="col-span-1">Buss</span>  </p>
+                        <p class="text-xl flex items-center justify-end"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-black">☆☆</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class=" col-span-3 relative flex flex-col sm:flex-row justify-center gap-2 items-center ">
+                <span class="text-gray-500">Write some reviews on </span>
+                <button class=" rounded-full bg-blue-600 text-white px-5 py-3 font-bold flex items-center gap-2"> <img src="https://img.icons8.com/material-rounded/24/FFFFFF/facebook-new.png"/>Facebook</button>
+            </div>
+            
+        </section>
+    </section>
+
+    <section class="container m-auto md:grid grid-cols-2 content-center gap-2 sm:h-screen h-auto sm:h-fit p-2 pt-11">
+        <span class="col-span-2 pl-2">
+            <p class="text-green-600 sm:text-lg">Ask anything</p>
+            <h2 class="sm:text-5xl text-3xl font-bold flex ">Say Hello</h2>
+        </span>
+        <div class="bg-gray-100 mt-3 rounded-3xl p-8 grid grid-cols-1 gap-2">
+            <span class="grid grid-cols-2 gap-2">
+                <input type="text" class="border p-3 rounded-md" placeholder="Jack">
+                <input type="text" class="border p-3  rounded-md" placeholder="Doe">
+            </span>
+            <input type="email" class="border p-3 rounded-md" placeholder="Jackdoe@gmail.com">
+            <textarea name="" id="" cols="30" rows="10" class="border p-3 rounded-md" placeholder="What can we help you"></textarea>
+            <button class="bg-orange-600 rounded-md text-white p-3 px-8 w-fit">Send</button>
+        </div>
+        <div class="bg-yellow-300 px-8 p-5 pt-10 mt-10 rounded-3xl z-10 relative">
+            <div class="absolute top-0 left-0 rounded-t-3xl  bg-orange-600 h-5 w-full"></div>
+            <div>
+                <h2 class="sm:text-5xl text-2xl font-bold flex text-white">Store</h2>
+                <span class="grid grid-cols-[25px,1fr] my-3 text-white text-lg">
+                    <img class="w-full" src="./img/icons8-location-50.png" alt="">&nbsp;
+                    102 Utah Road, Berlin, Germany
+                </span>
+                <h2 class="sm:text-5xl text-2xl font-bold flex text-white mt-4">Contact Info</h2>
+                <span class="flex gap-5 flex-col sm:flex-row justify-start my-3" >
+                    <span class="grid grid-cols-[25px,1fr] text-white text-lg">
+                        <img class="w-full" src="./img/icons8-phone-50.png" alt="">&nbsp;
+                        090-080-0760
+                    </span>
+                    <span class="grid grid-cols-[25px,1fr] text-white text-lg">
+                        <img class="w-full" src="./img/icons8-secured-letter-50.png" alt="">&nbsp;
+                        info@company.com
+                    </span>
+                </span>
+            </div>
+            <iframe class="border-none w-full h-1/2 rounded-3xl mt-6" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2551.189392116606!2d-0.10116877774936209!3d51.50795021586266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sar!2sma!4v1681541942665!5m2!1sar!2sma"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <section class="h-screen relative">
+        <section class="absolute h-screen w-full bg-no-repeat z-0 bg-cover bg-center top-0" style="background-image: url(./img/Footerbg.png);"></section>
+        <section class="container z-10 m-auto h-screen p-2  grid content-end sm:grid-cols-2 sm:justify-start gap-6  sm:gap-0 sm:pb-5">
+            <div class="z-10 grid grid-cols-2 sm:content-between sm:h-64">
+               <span>
+                <h2 class="text-3xl font-bold flex text-white">M-store</h2>
+                <p class="text-xl font-thin flex text-gray-100">Since 1986, we crafted interior product for better spaces</p>
+                <p class="text-md font-thin flex text-gray-400">Web Design: Mouad</p>
+               </span>
+               <span></span>
+            </div>
+            <div class="z-10 sm:grid grid-cols-2 content-between">
+
+                <span>
+                    <h2 class="text-3xl font-bold flex mb-2 text-white">Store</h2>
+                    <span class="grid grid-cols-[25px,1fr] my-3 py-2 text-white text-lg">
+                        <img class="w-full" src="https://img.icons8.com/ios/50/FFFFFF/marker--v1.png"/>
+                        102 Utah Road, Berlin, Germany
+                    </span>
+                </span>
+
+                <span>
+                    <h2 class="text-3xl font-bold flex mb-2 text-white">Contact Info</h2>
+                    <span class="grid grid-cols-[25px,1fr] py-2 text-white text-lg">
+                        <img class="w-full"src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png"/>&nbsp;
+                        090-080-0760
+                    </span>
+                    <span class="grid grid-cols-[25px,1fr] py-2 text-white text-lg">
+                        <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/FFFFFF/external-email-communication-nawicon-detailed-outline-nawicon.png"/>&nbsp;
+                        info@company.com
+                    </span>
+                </span>
+
+                <span class="col-span-2">
+                    <small class="text-gray-100 flex gap-5">
+                        Copyright © M-store 2023 
+                        <a href="#"><img src="https://img.icons8.com/color/25/null/twitter--v1.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-filled/20/00ADFF/facebook-new.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/20/C822FF/instagram-new.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/ios-glyphs/20/FF0000/pinterest.png"/></a>
+                        <a href="#"><img src="https://img.icons8.com/fluency-systems-regular/20/17D323/whatsapp.png"/></a>
+                    </small>
+                </span>
+            </div>
+        </section>
+    </section>
+    
+    
+</body>
+</html>
